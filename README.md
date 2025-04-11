@@ -95,6 +95,7 @@ llm = OpenAI(temperature=0.8)
 
 # For more factual responses
 llm = OpenAI(temperature=0.1)
+```
 
 ---
 
