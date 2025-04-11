@@ -79,3 +79,48 @@ llm = OpenAI(temperature=0.2)
 # Ask a question
 response = llm.predict("what is population of united states?")
 print(response)
+```
+
+To modify the question, simply change the text inside the llm.predict() function.
+
+### Adjusting Temperature
+
+The temperature parameter controls how creative the model's responses will be:
+- Lower values (0.0-0.3): More deterministic, factual responses
+- Higher values (0.7-1.0): More creative, varied responses
+
+```python
+# For more creative responses
+llm = OpenAI(temperature=0.8)
+
+# For more factual responses
+llm = OpenAI(temperature=0.1)
+
+---
+
+## 📝 Notes on API Keys
+
+- Never commit your API keys to version control
+- For production applications, use environment variables or a secure secrets manager
+- The current implementation in main.py is for demonstration purposes only
+
+---
+
+## 🔍 Further Resources
+
+- [LangChain Documentation](https://python.langchain.com/docs/get_started/introduction)
+- [OpenAI API Documentation](https://platform.openai.com/docs/api-reference)
+- [Security Best Practices for API Keys](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+## 🤝 Acknowledgements
+
+* LangChain team for the excellent framework
+* OpenAI for providing the language model API
